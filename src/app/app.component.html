@@ -1,0 +1,10 @@
+<div>
+  <h4>Additional Information</h4>
+  <div>
+    <mat-grid-list cols="{{numColumns}}" rowHeight="50px">
+      <mat-grid-tile *ngFor="let d of data">
+        <div id="info"><span id="label">{{d.key}}:</span> {{d.value}}</div>
+      </mat-grid-tile>
+    </mat-grid-list>
+  </div>
+</div>
